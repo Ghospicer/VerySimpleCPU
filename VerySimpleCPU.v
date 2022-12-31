@@ -105,7 +105,7 @@ always@(*)begin
 			addr_toRAM = data_fromRAM[27:14];
 			r1_next = data_fromRAM[13:0];
 			state_next = 5;
-              	{3'b100,1'b1}:begin //CPi Hata var galiba
+              	{3'b100,1'b1}:begin //CPi
                   	wrEn = 1;
 					addr_toRAM = iw_current[27:14];
                   	data_toRAM = iw_current[13:0];
